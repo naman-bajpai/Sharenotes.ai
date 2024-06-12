@@ -15,7 +15,7 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 flex gap-2 justify-center", className)}
       >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Home">
@@ -44,9 +44,12 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/hobby">Search Notes</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Login">
+        
+      </Menu>
+      <Menu setActive={setActive}>
+      <MenuItem setActive={setActive} active={active} item="Login">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby"></HoveredLink>
+            <HoveredLink href="/hobby">Login to your account</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Signup">
