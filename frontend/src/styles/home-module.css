@@ -1,0 +1,62 @@
+/* styles/Home.module.css */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 24px;
+  }
+  
+  .topSection {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .subheading {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    background-color: #0070f3;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #005bb5;
+  }
+  
+  .universitiesSection {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .universitiesHeading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .universityLogos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .universityLogos img {
+    max-width: 150px;
+    height: auto;
+  }
+  
