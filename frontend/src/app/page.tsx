@@ -1,14 +1,15 @@
-import Image from "next/image";
 import Link from "next/link";
-import { NavbarDemo } from "../components/navbar";
-
+import Navbar from "@/components/navbar";
+import styles from "./page.module.css";
+import Hero from "./hero/Hero";
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Bruv 
-      <NavbarDemo />
-      <Link href="/login">Login</Link>
-      <Link href="/signup">Signup</Link>
-    </main>
-  );
+    return (
+        <main className={styles.main}>
+            <Navbar />
+
+            <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+            <Hero />
+            </div>
+        </main>
+    );
 }
