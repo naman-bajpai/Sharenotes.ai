@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Styles from "./navbar.module.scss";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Navbar = () => {
     const [burgerMenuActive, setBurgerMenuActive] = useState(false);
@@ -68,7 +69,7 @@ const Navbar = () => {
                     variants={motionVariants}
                 >
                     <motion.li variants={listItemVariants}>
-                        <a href="/">Search</a>
+                        <Link href="/search">Search</Link>
                     </motion.li>
                     <motion.li variants={listItemVariants}>
                         <a href="/">Notes</a>
